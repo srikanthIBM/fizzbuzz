@@ -1,11 +1,11 @@
 import {ContainerConfiguration, Scope} from 'typescript-ioc';
-import {HelloWorldApi} from './hello-world.api';
-import {HelloWorldService} from './hello-world.service';
+import {FizzbuzzApi} from './fizzbuzz.api';
+import {FizzbuzzService} from './fizzbuzz.service';
 
 const config: ContainerConfiguration[] = [
   {
-    bind: HelloWorldApi,
-    to: HelloWorldService,
+    bind: FizzbuzzApi,
+    to: FizzbuzzService,
     scope: Scope.Singleton
   }
 ];
