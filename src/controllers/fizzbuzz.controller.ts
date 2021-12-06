@@ -3,7 +3,7 @@ import {Inject} from 'typescript-ioc';
 import {FizzbuzzApi} from '../services';
 import {LoggerApi} from '../logger';
 
-@Path('/hello')
+@Path('/fizzbuzz')
 export class FizzbuzzController {
 
   @Inject
